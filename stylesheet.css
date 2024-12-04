@@ -1,49 +1,94 @@
-@font-face {
-    font-family: 'FMBolyar Sans Pro 300';
-    src: url('FMBolyarSansPro-300.eot');
-    src: local('FMBolyar Sans Pro 300'), local('FMBolyarSansPro-300'),
-        url('FMBolyarSansPro-300.eot?#iefix') format('embedded-opentype'),
-        url('FMBolyarSansPro-300.woff2') format('woff2'),
-        url('FMBolyarSansPro-300.woff') format('woff'),
-        url('FMBolyarSansPro-300.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
+* {
+margin: 0;
+padding:0;
+box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'FMBolyar Sans Pro 800';
-    src: url('FMBolyarSansPro-800.eot');
-    src: local('FMBolyar Sans Pro 800'), local('FMBolyarSansPro-800'),
-        url('FMBolyarSansPro-800.eot?#iefix') format('embedded-opentype'),
-        url('FMBolyarSansPro-800.woff2') format('woff2'),
-        url('FMBolyarSansPro-800.woff') format('woff'),
-        url('FMBolyarSansPro-800.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
+.navbar {
+display: flex;
+align-items: center;
+padding: 20px;
 }
 
-@font-face {
-    font-family: 'FMBolyar Sans Pro 200';
-    src: url('FMBolyarSansPro-200.eot');
-    src: local('FMBolyar Sans Pro 200'), local('FMBolyarSansPro-200'),
-        url('FMBolyarSansPro-200.eot?#iefix') format('embedded-opentype'),
-        url('FMBolyarSansPro-200.woff2') format('woff2'),
-        url('FMBolyarSansPro-200.woff') format('woff'),
-        url('FMBolyarSansPro-200.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+nav {
+flex: 1;
+text-align:center;
 }
 
-@font-face {
-    font-family: 'FMBolyar Sans Pro 400';
-    src: url('FMBolyarSansPro-400.eot');
-    src: local('FMBolyar Sans Pro 400'), local('FMBolyarSansPro-400'),
-        url('FMBolyarSansPro-400.eot?#iefix') format('embedded-opentype'),
-        url('FMBolyarSansPro-400.woff2') format('woff2'),
-        url('FMBolyarSansPro-400.woff') format('woff'),
-        url('FMBolyarSansPro-400.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+nav ul {
+display: inline-block;
+list-style-type: none;
+}
+
+nav ul li {
+display: inline-block;
+padding: 10px 10px;
+margin-right: 20px;
+color: chocolate;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 25px;
+}
+
+nav ul li {
+    position: relative;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: rgb(155, 133, 8);
+    position: relative;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ee6f5e;
+    transition: width 0.3s ease;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  
+
+
+
+
+
+a {
+
+    text-decoration: none;
+    color: rgb(155, 133, 8);
+}
+
+h1 {
+    display:flex;
+    align-items: center;
+    color: rgb(223, 5, 5);
+    text-transform: uppercase;
+    font-size: 70px;
+}
+
+h2 {
+    display:flex;
+    color: #696767;
+    text-align:justify;
+    text-transform: uppercase;
+    font-style: oblique;
+    font-size: 20px;
+   
+}
+
+header {
+    display:flex;
+    align-items: center;
+    background: rgb(255, 250, 242);
+    margin: 20px;
+    padding: 10px 10px;
 }
 
 @font-face {
@@ -58,51 +103,115 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'FMBolyar Sans Pro 100';
-    src: url('FMBolyarSansPro-100.eot');
-    src: local('FMBolyar Sans Pro 100'), local('FMBolyarSansPro-100'),
-        url('FMBolyarSansPro-100.eot?#iefix') format('embedded-opentype'),
-        url('FMBolyarSansPro-100.woff2') format('woff2'),
-        url('FMBolyarSansPro-100.woff') format('woff'),
-        url('FMBolyarSansPro-100.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
+h1, h2 {
+    font-family: 'FMBoylar Sans Pro-500', sans-serif;
+    font-weight: 500; 
+    
+}
+
+
+body {
+    font-family: 'Boylar Sans Pro', sans-serif;
+}
+
+header img {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: 20px;
+padding:10px 10px;
+}
+.container {
+max-width: 1500px;
+margin: auto;
+padding-left: 25px;
+padding-right: 25px;
+}
+
+.row {
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+justify-content:space-around;
+padding: 10px 5px;
+}
+
+.row p{
+padding: 10px 5px;
+margin: 10px 10px;
+font-size: 20px;
+}
+.col {
+flex-basis: 50%;
+min-width: 100px;
+}
+
+.col img {
+    max-width: 100%;
+    padding: 50px 10px;
+}
+
+.row h3 {
+font-size: 40px;
+line-height: 40px;
+margin-top: 25px;
+font-weight: bolder;
 }
 
 @font-face {
-    font-family: 'FMBolyar Sans Pro 600';
-    src: url('FMBolyarSansPro-600.eot');
-    src: local('FMBolyar Sans Pro 600'), local('FMBolyarSansPro-600'),
-        url('FMBolyarSansPro-600.eot?#iefix') format('embedded-opentype'),
-        url('FMBolyarSansPro-600.woff2') format('woff2'),
-        url('FMBolyarSansPro-600.woff') format('woff'),
-        url('FMBolyarSansPro-600.ttf') format('truetype');
-    font-weight: 600;
+    font-family: 'FMBolyar Sans Pro 200';
+    src: url('FMBolyarSansPro-200.eot');
+    src: local('FMBolyar Sans Pro 200'), local('FMBolyarSansPro-200'),
+        url('FMBolyarSansPro-200.eot?#iefix') format('embedded-opentype'),
+        url('FMBolyarSansPro-200.woff2') format('woff2'),
+        url('FMBolyarSansPro-200.woff') format('woff'),
+        url('FMBolyarSansPro-200.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'FMBolyar Sans Pro 700';
-    src: url('FMBolyarSansPro-700.eot');
-    src: local('FMBolyar Sans Pro 700'), local('FMBolyarSansPro-700'),
-        url('FMBolyarSansPro-700.eot?#iefix') format('embedded-opentype'),
-        url('FMBolyarSansPro-700.woff2') format('woff2'),
-        url('FMBolyarSansPro-700.woff') format('woff'),
-        url('FMBolyarSansPro-700.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+
+h3, p {
+    font-family: 'FMBoylar Sans Pro-500', sans-serif;
+    font-weight: 200; 
 }
 
-@font-face {
-    font-family: 'FMBolyar Sans Pro 900';
-    src: url('FMBolyarSansPro-900.eot');
-    src: local('FMBolyar Sans Pro 900'), local('FMBolyarSansPro-900'),
-        url('FMBolyarSansPro-900.eot?#iefix') format('embedded-opentype'),
-        url('FMBolyarSansPro-900.woff2') format('woff2'),
-        url('FMBolyarSansPro-900.woff') format('woff'),
-        url('FMBolyarSansPro-900.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
+
+
+.btn1 {
+display: inline-block;
+background: #ee6f5e;
+color: #fff;
+padding: 8px 30px;
+margin: 30px 0;
+border-radius: 50px;
 }
+
+.btn {
+    display: inline-block;
+    align-items: center;
+    background: #696767;
+    color: #fff;
+    padding: 8px 10px;
+    margin: 5px 0;
+    border-radius: 50px;
+}
+
+body {
+background-color: rgb(245, 233, 218);
+}
+
+footer p {
+font-family:Arial, Helvetica, sans-serif;
+font-weight: 200;
+}
+
+footer li {
+    display: inline-block;
+    padding: 10px 10px;
+    margin-right: 20px;
+    color: chocolate;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }
 
